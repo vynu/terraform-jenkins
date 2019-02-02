@@ -9,6 +9,8 @@ environment {
               git url: 'https://github.com/vynu/terraform-jenkins.git'
 
               sh "ls -lat"
+              sh "pwd"
+              sh "docker ps"
             }
         }
 }
