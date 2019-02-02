@@ -10,7 +10,7 @@ environment {
 
               sh "ls -lat"
               sh "pwd"
-              sh "docker ps"
+              sh "whoami"
             }
         }
 }
