@@ -57,7 +57,7 @@ resource "aws_route_table_association" "web-public-rt" {
 # ec2-key-pair and local system pub key
 resource "aws_key_pair" "terraform-ex" {
    key_name = "terraform-ex"
-   public_key = "${file("/root/.ssh/id_rsa.pub")}"
+   public_key = "${file("/Users/vynu/.ssh/id_rsa.pub")}"
 }
 
 # network interface
