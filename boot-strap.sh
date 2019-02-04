@@ -18,6 +18,7 @@ aws s3 cp s3://tf-files-repo/project-files/docker-compose.yml /home/ec2-user/
 cd /home/ec2-user/
 docker-compose up -d
 yum install git -y
+curl http://localhost:8080
 cat /var/lib/jenkins/secrets/initialAdminPassword > jenkins-pswd.txt
 aws s3 cp jenkins-pswd.txt s3://tf-files//jenkins-files/jenkins-pswd.txt
 aws s3 cp s3://tf-files-repo/.aws /home/ec2-user/.aws/ --recursive
